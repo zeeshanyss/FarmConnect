@@ -1,0 +1,44 @@
+@'
+
+# Secrets
+.env
+.env.*
+!.env.example
+*serviceAccount*.json
+*firebase-adminsdk*.json
+*.pem
+*.key
+
+# Dependencies and environments
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# ML datasets and trained artifacts
+ml/data/
+ml/artifacts/
+*.keras
+*.h5
+*.joblib
+*.pkl
+
+# Cache and temporary files
+data/mandi-cache/
+*.log
+*.bak
+*.zip
+.DS_Store
+'@ | Add-Content .gitignore
+# Local development backups
+*.backup.*
+*.before-*
+*.damaged-backup.*
+*broken-backup*
+
+# Additional backup files
+*backup*
+
+# Local API testing scripts
+test-mandi-*.cjs
